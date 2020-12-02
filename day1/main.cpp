@@ -6,7 +6,7 @@ using namespace std;
 
 int main(void)
 {
-    int i, j;
+    int i, j, k;
     int list_length = 0;
     ifstream ifp;
     char buffer[100];
@@ -24,13 +24,15 @@ int main(void)
     {
         for (j = i; j < list_length; j++)
         {
-            if (task[i] + task[j] == 2020)
+            for (k = j; k < list_length; k++)
             {
-                cout << "solution found" << task[i] << " + " << task[j] << " = 2020." << endl;
-                cout << task[i] << " * " << task[j] << " = " << task[i] * task[j] << endl;
+                if (task[i] + task[j] + task[k] == 2020)
+                {
+                    cout << "Solution found" << task[i] << " + " << task[j] << " + " << task[k] << " = 2020." << endl;
+                    cout << task[i] << " * " << task[j] << " * " << task[k] << " = " << task[i] * task[j] * task[k] << endl;
+                }
             }
         }
     }
-
     return 0;
 }
