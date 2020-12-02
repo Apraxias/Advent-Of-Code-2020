@@ -1,8 +1,2 @@
-.vscode/tasks.json
-.vscode/launch.json
-.vscode/settings.json
-day1/.vscode/launch.json
-day1/.vscode/tasks.json
-day1/.vscode/settings.json
-day1/main.exe
-day1/a.exe
+**/.vscode
+**/*.exe
