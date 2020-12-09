@@ -28,7 +28,7 @@ int main(void)
             {
                 if (task[i] + task[j] + task[k] == 2020)
                 {
-                    cout << "Solution found" << task[i] << " + " << task[j] << " + " << task[k] << " = 2020." << endl;
+                    cout << "Solution found " << task[i] << " + " << task[j] << " + " << task[k] << " = 2020." << endl;
                     cout << task[i] << " * " << task[j] << " * " << task[k] << " = " << task[i] * task[j] * task[k] << endl;
                 }
             }
